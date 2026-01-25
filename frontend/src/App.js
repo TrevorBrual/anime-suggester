@@ -7,7 +7,7 @@ function App() {
   const [selectedRatings, setSelectedRatings] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
   const ratingOptions = ["G", "PG", "PG-13", "R"];
-  const [description, setDescription] = useState("");
+  //const [description, setDescription] = useState("");
 
   // Funtion to handle checking/unchecking rating checkboxes
   function handleRatingChange(e) {
@@ -43,9 +43,8 @@ function App() {
         <select onChange ={(e) => setGenre(e.target.value)}>
           <option value = "Any">Any</option>
           <option value = "Action">Action</option>
+          <option value = "Adventure">Adventure</option>
           <option value = "Comedy">Comedy</option>
-          <option value = "Drama">Drama</option>
-          <option value = "Fantasy">Fantasy</option>
           <option value = "Horror">Horror</option>
           <option value = "Romance">Romance</option>
           <option value = "Sports">Sports</option>
@@ -64,7 +63,7 @@ function App() {
 
       {/* RATING CHECKBOXES */}
       <div style = {{marginBottom: "20px", padding: "10px", border: "1px solid #ddd"}}>
-        <strong>Filter by rating (Pick multiple)</strong><br/>  
+        <strong>Filter by rating </strong><br/>  
 
         {ratingOptions.map((rating) => (
           <label key = {rating} style = {{ marginRight: "15px", cursor: "pointer"}}>

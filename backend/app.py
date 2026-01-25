@@ -7,21 +7,6 @@ app = Flask(__name__)
 CORS(app)
 # Need to enable CORS to allow React frontend to communicate with Flask backend
 
-# Want to add description for each anime later on and have be able to pick different vibes if needed (Done)
-# Make the website a lil better to look at. Look into react frameworks, want to use CSS libraries like TailwindCSS or Bootstrap
-# Could add more filtering options like length of anime, year released, rating, etc.
-# Maybe add a watchlist feature where users can save anime to watch later
-# Could add user accounts and let users rate anime and get recommendations based on their ratings
-# Could add a search feature to search for specific anime
-# Could add a feature to recommend similar anime based on a selected anime
-# Could add a feature to recommend anime based on mood or activities (e.g. studying, relaxing, etc.)
-# Could add a feature to recommend anime based on time available (e.g. short anime for quick breaks, long anime for weekends, etc.)
-# Could add a feature to recommend anime based on previously watched anime
-# Want to deploy the app online using Heroku or another service
-# Want to a feature that interacts with an external anime API to get more detailed information about each anime?
-# Want to add a feature that allows to have users to have an external link to watch the anime on their preferred streaming service (e.g., Crunchyroll, Funimation, Netflix, etc.) if available 
-
-
 @app.route('/recommend', methods=['POST'] )
 def recommend():
     # React sends data as JSON, not a Form
