@@ -55,4 +55,4 @@ Since this is a full-stack application, you need to run the Backend and Frontend
     *The app will open in your browser at `http://localhost:3000`*
 
 ---
-*Created by [Trevor Brual]*
+*Created by Trevor Brual*
